@@ -60,6 +60,7 @@ const Cart = () => {
           </div>
         )}
 
+
         <div className="product-container">
           {cartItems.length >= 1 && cartItems.map((item) => (
             <div className="product" key={item._id}>
@@ -75,7 +76,7 @@ const Cart = () => {
                     <span className="minus" onClick={() => toggleCartItemQuanitity(item._id, 'dec') }>
                     <AiOutlineMinus />
                     </span>
-                    <span className="num" onClick="">{item.quantity}</span>
+                    <span className="num" >{item.quantity}</span>
                     <span className="plus" onClick={() => toggleCartItemQuanitity(item._id, 'inc') }><AiOutlinePlus /></span>
                   </p>
                   </div>
